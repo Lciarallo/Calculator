@@ -25,14 +25,17 @@ int main(){
     printf("\nWhat type of operation would you like to do? ");
     scanf("%1d", &operation);
 
-    if(operation != 8, 9)
+    printf("Insert value of X: ");
+    scanf("%lf", &num1);
+    printf("Insert value of Y: ");
+    scanf("%lf", &num2);
+
+    switch (operation)
     {
-        puts("******************************************");
-        puts("Insert the value of A");
-        scanf("%d", &num1);
-        puts("Insert the value of B);
-        scanf("%d", &num2);
-        puts("******************************************\n");
+    case 0:
+        result = num1 + num2;
+        printf("The result of the operation %.2f + %.2f = %.2f", num1, num2, result);
+        break;
     }
 
     return 0;
